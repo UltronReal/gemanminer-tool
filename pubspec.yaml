@@ -1,0 +1,10 @@
+name:  Egal
+description: OwO
+publish_to: none
+
+dependencies: 
+  http: ^0.13.5
+  shelf: ^1.2.0
+
+environment:
+  sdk: '^2.12.0'
