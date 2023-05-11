@@ -7,13 +7,13 @@ void main() {
   final apiKey = 'api-key-here';
   print('⁕ GermanMiner API ⁕\n');
   print('Welcher Request soll ausgeführt werden?');
-  print('1. Bank Transaction');
+  print('1. Bank Transaktion');
   print('2. Verfügbare Konten abrufen');
   print('3. Kontoauszug abrufen');
   print('4. Kontoinformationen abrufen');
   print('5. Lagerbestand eines Geschäfts abrufen');
 
-  final input = stdin.readLineSync();
+  final input = _readLine("");
 
   if (input == '1') {
     final accountNumber = _readLine('⁕ Bitte geben Sie Ihre Kontonummer ein:');
@@ -64,7 +64,7 @@ void main() {
 }
 
 String _readLine(String message) {
-  print(message);
+  stdout.write("$message${message.length > 0 ? '\n' : ''}> ");
   final input = stdin.readLineSync();
   return input ?? '';
 }

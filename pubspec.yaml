@@ -1,5 +1,5 @@
-name:  Egal
-description: OwO
+name: GermanminerTool
+description: A command line tool to interact with the German Miner API
 publish_to: none
 
 dependencies: 
