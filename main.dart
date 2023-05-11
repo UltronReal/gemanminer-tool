@@ -13,8 +13,7 @@ void main() {
   print('4. Kontoinformationen abrufen');
   print('5. Lagerbestand eines Geschäfts abrufen');
 
-  stdout.write('> ');
-  final input = stdin.readLineSync();
+  final input = _readLine("");
 
   if (input == '1') {
     final accountNumber = _readLine('⁕ Bitte geben Sie Ihre Kontonummer ein:');
@@ -65,7 +64,7 @@ void main() {
 }
 
 String _readLine(String message) {
-  print(message);
+  stdout.write("$message${message.length > 0 ? '\n' : ''}> ");
   final input = stdin.readLineSync();
   return input ?? '';
 }
