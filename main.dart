@@ -7,7 +7,7 @@ void main() {
   final apiKey = 'api-key-here';
   print('⁕ GermanMiner API ⁕\n');
   print('Welcher Request soll ausgeführt werden?');
-  print('1. Bank Transaction');
+  print('1. Bank Transaktion');
   print('2. Verfügbare Konten abrufen');
   print('3. Kontoauszug abrufen');
   print('4. Kontoinformationen abrufen');
