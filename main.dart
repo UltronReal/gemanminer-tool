@@ -13,6 +13,7 @@ void main() {
   print('4. Kontoinformationen abrufen');
   print('5. Lagerbestand eines Geschäfts abrufen');
 
+  stdout.write('> ');
   final input = stdin.readLineSync();
 
   if (input == '1') {
